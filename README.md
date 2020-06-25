@@ -35,21 +35,12 @@ web site</a>:
 
 ## Loading the data
 
-
-
-
-
 When loading the dataset into R, please consider the following:
 
-* The dataset has 2,075,259 rows and 9 columns. First
-calculate a rough estimate of how much memory the dataset will require
-in memory before reading into R. Make sure your computer has enough
-memory (most modern computers should be fine).
+* The dataset has 2,075,259 rows and 9 columns. 
 
 * We will only be using data from the dates 2007-02-01 and
-2007-02-02. One alternative is to read the data from just those dates
-rather than reading in the entire dataset and subsetting to those
-dates.
+2007-02-02. A new variable DateTime (Date/Time class) was created, and rows with DateTime between 2007-2-1 00:00:00 and 2007-2-3 00:00:00 were selected
 
 * You may find it useful to convert the Date and Time variables to
 Date/Time classes in R using the `strptime()` and `as.Date()`
@@ -65,28 +56,19 @@ varies over a 2-day period in February, 2007. Your task is to
 reconstruct the following plots below, all of which were constructed
 using the base plotting system.
 
-First you will need to fork and clone the following GitHub repository:
-[https://github.com/rdpeng/ExData_Plotting1](https://github.com/rdpeng/ExData_Plotting1)
-
-
 For each plot you should
 
-* Construct the plot and save it to a PNG file with a width of 480
+* Four plots were created, and each comes with a separate R code file.
+
+* Plots were saved as PNG files with a width of 480
 pixels and a height of 480 pixels.
 
 * Name each of the plot files as `plot1.png`, `plot2.png`, etc.
 
 * Create a separate R code file (`plot1.R`, `plot2.R`, etc.) that
 constructs the corresponding plot, i.e. code in `plot1.R` constructs
-the `plot1.png` plot. Your code file **should include code for reading
-the data** so that the plot can be fully reproduced. You should also
-include the code that creates the PNG file.
-
-* Add the PNG file and R code file to your git repository
-
-When you are finished with the assignment, push your git repository to
-GitHub so that the GitHub version of your repository is up to
-date. There should be four PNG files and four R code files.
+the `plot1.png` plot. Code files includes code for reading
+the data. 
 
 
 The four plots that you will need to construct are shown below. 
