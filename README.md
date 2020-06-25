@@ -42,9 +42,6 @@ When loading the dataset into R, please consider the following:
 * We will only be using data from the dates 2007-02-01 and
 2007-02-02. A new variable DateTime (Date/Time class) was created, and rows with DateTime between 2007-2-1 00:00:00 and 2007-2-3 00:00:00 were selected
 
-* You may find it useful to convert the Date and Time variables to
-Date/Time classes in R using the `strptime()` and `as.Date()`
-functions.
 
 * Note that in this dataset missing values are coded as `?`.
 
